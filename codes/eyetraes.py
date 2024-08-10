@@ -10,8 +10,5 @@ if __name__ == "__main__":
         print(f)
         reader, visualizer = set_visualizer(f)
         kalman = set_kalman_filter()
-        min_events = 4000 
-        max_events = 17000
-        event_volume = (min_events, max_events)
-        corrected_coordinatess = get_coordinates_adaptive(reader, event_volume, visualizer, kalman)
+        corrected_coordinatess = get_coordinates_adaptive(reader, kalman)
         # Disable visaulaizer to have lower latency

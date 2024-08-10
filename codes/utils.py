@@ -145,7 +145,7 @@ def get_coordinates(reader, event_volume, visualizer, kalman, cnt_count, cnt_are
     cv.destroyAllWindows()
     return corrected_coordinatess
 
-def get_coordinates_adaptive(reader, event_volume, visualizer, kalman):
+def get_coordinates_adaptive(reader, kalman):
     set_kalman_flag = 0
     corrected_coordinatess = []
     avg_coordinate = np.array([0,0])
